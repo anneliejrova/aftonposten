@@ -1,0 +1,90 @@
+
+
+.container{
+padding: 0rem 1rem 1rem 1rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  width:100%;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+    max-height: 3rem;
+  }
+
+h1{
+  font-family: "Bigshot One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:26px;
+}
+
+details{
+  display:block;
+  position: fixed;
+  top: 2vh;
+  right: 3vw;
+  padding: 10px;
+  background-color: var(--light-color);
+  border-radius: 5px; 
+  margin-right: 2vw;
+}
+
+details summary::marker {
+  content: "";
+}
+
+details .open {
+  display: none;
+  padding: 10px;
+}
+
+details[open] .open {
+  display: inline;
+}
+
+details .closed {
+  display: inline;
+}
+
+details[open] .closed {
+  display: none;
+}
+
+
+.dropp{
+  line-height: 3rem;
+  font-size: 1.5rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dropp img{
+  max-width: 3rem;
+  margin-bottom: 1.2rem;
+}
+
+.dropp .btn-accent {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.social img{
+  width: 1.2rem;
+  margin: 4rem 1rem 0rem 1rem;
+}
+
+.links{
+  display:none;
+}
+
+
+

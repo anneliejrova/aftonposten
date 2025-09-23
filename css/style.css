@@ -1,0 +1,52 @@
+
+
+body{
+  width:100vw;
+  font-family: Geist;
+  font-size: 14px;
+  color: var(--dark-color);
+  background-color: var(--beige-color);
+}
+
+.btn{
+    padding:0rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    box-shadow: none;
+    align-content: center;
+    justify-self: center;
+    border: 1px solid var(--dark-color);
+
+
+}
+
+.btn-accent{
+    padding:0rem 2rem;
+    background-color: rgb(151, 93, 133);
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border:2px solid var(--accent-color);
+    background-color: var(--accent-color);
+    box-shadow: none;
+    align-content: center;
+    justify-self: center;
+    box-shadow: none;
+}
+
+ul{
+  text-decoration: none;
+  list-style-type:none;
+  padding-left: 0; 
+  margin: 0;
+  align-content: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
