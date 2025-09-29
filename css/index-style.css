@@ -1,7 +1,12 @@
+body{
+  width:100vw;
+}
+
+
 header{
   display: flex;
   align-items: center;
-  margin: 1rem 1rem 1rem 1rem;
+  padding: 0.2rem 1rem;
 }
 
 .logo{
@@ -16,10 +21,10 @@ header{
   }
 
 h1{
-  font-family: "Bigshot One", serif;
+  font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size:3 rem;
+  font-size: 1 rem;
 }
 
 
@@ -28,7 +33,7 @@ details{
   position: fixed;
   top: 2rem;
   right: 1rem;
-  background-color: var(--light-color);
+  background-color: var(--beige-color);
   border-radius: 5px; 
   margin-right: 2vw;
 }
@@ -48,7 +53,9 @@ details[open] .open {
 
 details .closed {
   display: inline;
-  background-color: var(--beige-color);
+  background-color: var(--light-color);
+  padding: 5px;
+  border-radius: 5px;
 }
 
 details[open] .closed {
@@ -62,12 +69,12 @@ details[open] .closed {
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 25px;
+  padding: 1rem 2rem;
 }
 
 .dropp img{
   max-width: 3rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .dropp .btn-accent {
@@ -84,9 +91,7 @@ details[open] .closed {
   display:none;
 }
 
-@media (min-width) {
-  
-}
+
 
 
 
@@ -100,12 +105,10 @@ details[open] .closed {
 
 
 #hero{
-  margin: 3rem 1rem 1rem 1rem;
+   padding: 0.2rem 1rem;
 }
 
-aside{
- margin: 3rem 1rem 1rem 1rem;
-}
+
 
 .cards{
   display:flex;
@@ -122,11 +125,7 @@ aside{
     max-width: 160px;
   }
 
-
-
-
   .news{
-    margin: 3rem 1rem 1rem 1rem;
     display:flex;
     flex-direction: column;
   }
@@ -135,6 +134,25 @@ aside{
     width:100vw;
     height: auto;
   }
+
+  .news-txt{
+    padding:1rem;
+  }
+
+  .text-klipp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+  .las-mer {
+  display: inline-block;
+  margin-top: 0.5em;
+  color: var(--brown-color);
+  text-decoration: underline;
+  padding-bottom: 3.5rem;
+}
 
   .style-img-right{
     display: flex;
