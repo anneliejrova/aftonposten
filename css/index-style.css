@@ -1,37 +1,33 @@
-
-
-.container{
-padding: 0rem 1rem 1rem 1rem;
-}
-
 header{
   display: flex;
   align-items: center;
-  width:100%;
+  margin: 1rem 1rem 1rem 1rem;
 }
 
 .logo{
   display: flex;
   align-items: center;
+  
 }
 
 .logo img{
-    max-height: 3rem;
+    height: 5rem;
+    width:auto;
   }
 
 h1{
   font-family: "Bigshot One", serif;
   font-weight: 400;
   font-style: normal;
-  font-size:26px;
+  font-size:3 rem;
 }
+
 
 details{
   display:block;
   position: fixed;
-  top: 2vh;
-  right: 3vw;
-  padding: 10px;
+  top: 2rem;
+  right: 1rem;
   background-color: var(--light-color);
   border-radius: 5px; 
   margin-right: 2vw;
@@ -43,7 +39,7 @@ details summary::marker {
 
 details .open {
   display: none;
-  padding: 10px;
+  padding: 25px;
 }
 
 details[open] .open {
@@ -52,6 +48,7 @@ details[open] .open {
 
 details .closed {
   display: inline;
+  background-color: var(--beige-color);
 }
 
 details[open] .closed {
@@ -65,6 +62,7 @@ details[open] .closed {
   display:flex;
   flex-direction: column;
   align-items: center;
+  padding: 25px;
 }
 
 .dropp img{
@@ -86,5 +84,104 @@ details[open] .closed {
   display:none;
 }
 
+@media (min-width) {
+  
+}
 
 
+
+
+
+
+
+
+
+
+
+
+#hero{
+  margin: 3rem 1rem 1rem 1rem;
+}
+
+aside{
+ margin: 3rem 1rem 1rem 1rem;
+}
+
+.cards{
+  display:flex;
+  flex-wrap: wrap;
+  gap:15px;
+}
+  
+  .card{
+    padding:5px;
+    font-size: -2rem;
+    background-color: var(--light-color);
+    color: var(--brown-color);
+    border-radius: 5px;
+    max-width: 160px;
+  }
+
+
+
+
+  .news{
+    margin: 3rem 1rem 1rem 1rem;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .news img{
+    width:100vw;
+    height: auto;
+  }
+
+  .style-img-right{
+    display: flex;
+    flex-direction: column;
+  }
+  .stylev-img-left{
+    display: flex;
+    flex-direction: column;
+  }
+  .style-img-above{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+.footer-logo{
+  display: flex;
+  align-items: center;
+  
+}
+
+footer-wrap{
+  display: flex;
+padding: 3rem 5rem 2rem 5rem;
+}
+
+.footer-logo img{
+    height: 2rem;
+    width:auto;
+  }
+
+.footer-logo .logo-txt{
+  font-family: "Bigshot One", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:1 rem;
+} 
+
+#footer-soc{
+  display: flex;
+  flex-direction: column;
+}
+
+#footer-soc img{
+  width: 1.5rem;
+  height: auto;
+  margin: 0.5rem;
+}
+
+  

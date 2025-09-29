@@ -3,9 +3,10 @@
 body{
   width:100vw;
   font-family: Geist;
-  font-size: 14px;
+  font-size: 18px;
   color: var(--dark-color);
   background-color: var(--beige-color);
+  margin:0;
 }
 
 .btn{
@@ -49,4 +50,14 @@ a{
 a:visited {
     color: inherit;
     text-decoration: none;
+}
+
+h2{
+    font-family: Arvo;
+}
+h3{
+    font-family: Arvo;
+}
+b{
+    font-family: Arvo;
 }
