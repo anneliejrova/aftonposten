@@ -12,7 +12,7 @@ header{
 .logo{
   display: flex;
   align-items: center;
-  
+  flex-direction: row;
 }
 
 .logo img{
@@ -91,35 +91,24 @@ details[open] .closed {
   display:none;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #hero{
    padding: 0.2rem 1rem;
 }
 
-
+aside{
+  padding: 1rem 0.2rem;
+  margin-bottom: 1rem;
+}
 
 .cards{
   display:flex;
   flex-wrap: wrap;
-  gap:15px;
+  margin-bottom: 2rem;
 }
   
   .card{
     padding:5px;
-    font-size: -2rem;
-    background-color: var(--light-color);
+    font-size: 0.8rem;
     color: var(--brown-color);
     border-radius: 5px;
     max-width: 160px;
@@ -141,7 +130,7 @@ details[open] .closed {
 
   .text-klipp {
   display: -webkit-box;
-  -webkit-line-clamp: 3; 
+  -webkit-line-clamp: 7; 
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -168,38 +157,54 @@ details[open] .closed {
   }
   
 
-.footer-logo{
+
+
+
+
+#footer-wrap{
   display: flex;
-  align-items: center;
-  
+  padding:1rem;
 }
 
-footer-wrap{
+.footer-logo{
   display: flex;
-padding: 3rem 5rem 2rem 5rem;
 }
 
 .footer-logo img{
-    height: 2rem;
+    height: 2.2rem;
     width:auto;
   }
 
-.footer-logo .logo-txt{
-  font-family: "Bigshot One", serif;
+.footer-logo-txt{
+  font-family: "DM Serif Display", serif;
   font-weight: 400;
   font-style: normal;
-  font-size:1 rem;
+  font-size: 1.2rem;
 } 
+
+#footer-links{
+  font-size: 0.8rem;
+  margin-left: 1.2rem;
+  padding-top: 0.4rem;
+  line-height: 1.6rem;
+}
 
 #footer-soc{
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: auto;
+  width: 5rem;
 }
 
 #footer-soc img{
-  width: 1.5rem;
+  width: 1rem;
   height: auto;
-  margin: 0.5rem;
+  padding: 0.6rem;
 }
 
-  
+@media (max-width: 359px) {
+  .logo{
+    flex-direction: column;
+    align-items: center;
+  }
+  }
