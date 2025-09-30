@@ -1,9 +1,26 @@
 body{
   width:100vw;
+  display:flex;
+  
+}
+
+#index-wrap{
+ max-width: 1200px;
+ 
+    display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "head"
+    "hero"
+    "side"
+    "main"
+    "subs"
+    "foot";
 }
 
 
 header{
+  grid-area: head;
   display: flex;
   align-items: center;
   padding: 0.2rem 1rem;
@@ -91,11 +108,10 @@ details[open] .closed {
   display:none;
 }
 
-#hero{
-   padding: 0.2rem 1rem;
-}
+
 
 .hero {
+  grid-area: hero;
   background: linear-gradient(135deg, var(--beige-color), var(--light-color));
   padding: 5rem 1rem;
   text-align: center;
@@ -128,6 +144,7 @@ details[open] .closed {
 
 
 aside{
+  grid-area:side;
   padding: 1rem 0.6rem;
   margin-bottom: 1rem;
 }
@@ -147,6 +164,10 @@ aside{
     color: var(--brown-color);
     border-radius: 5px;
     max-width: 160px;
+  }
+
+  main{
+    grid-area:main;
   }
 
   .news{
@@ -195,6 +216,7 @@ aside{
 
 
 .news-letter{
+  grid-area: subs;
   margin: 2rem;
   padding: 2rem 1rem 3rem 1rem;
   background-color: var(--brown-color);
@@ -223,6 +245,9 @@ aside{
   margin-top: 0.6rem;
 }
 
+footer{
+  grid-area:foot;
+}
 #footer-wrap{
   display: flex;
   padding:1rem;
@@ -266,8 +291,56 @@ aside{
 }
 
 @media (max-width: 359px) {
+
   .logo{
     flex-direction: column;
     align-items: center;
   }
+
+}
+
+@media (min-width: 1024px) {
+
+  #index-wrap{
+    grid-template-columns: 5fr 1fr;  
+    grid-template-areas:
+    "head head" 
+    "hero hero"
+    "main side"
+    "subs side"
+    "foot foot";
+    gap: 5rem;
   }
+
+  aside{
+    flex-direction: column;
+    padding: 5rem 0.6rem;
+  margin-bottom: 1rem;
+  }
+
+  .senaste{
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--red-color);
+}
+
+  .news img{
+    width:100%;
+  }
+
+    .news-txt{
+    padding:1rem;
+  }
+
+  .card{
+    padding:10px;
+    font-size: 1rem;
+    color: var(--brown-color);
+    border-radius: 0px;
+    max-width: 800px;
+  }
+
+  .hero{
+    padding: 15rem 5rem;
+  }
+}
