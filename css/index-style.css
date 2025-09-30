@@ -95,15 +95,50 @@ details[open] .closed {
    padding: 0.2rem 1rem;
 }
 
-aside{
-  padding: 1rem 0.2rem;
+.hero {
+  background: linear-gradient(135deg, var(--beige-color), var(--light-color));
+  padding: 5rem 1rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--dark-color);
   margin-bottom: 1rem;
 }
 
+.hero p {
+  font-size: 1.125rem;
+  color: var(--brown-color);
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+
+aside{
+  padding: 1rem 0.6rem;
+  margin-bottom: 1rem;
+}
+.senaste{
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--red-color)
+}
 .cards{
   display:flex;
   flex-wrap: wrap;
-  margin-bottom: 2rem;
 }
   
   .card{
@@ -117,6 +152,7 @@ aside{
   .news{
     display:flex;
     flex-direction: column;
+    margin-top: 4rem;;
   }
 
   .news img{
@@ -184,7 +220,7 @@ aside{
   background-color: var(--red-color);
   color:var(--light-color);
   font-family: "Inter", sans-serif;
-
+  margin-top: 0.6rem;
 }
 
 #footer-wrap{
