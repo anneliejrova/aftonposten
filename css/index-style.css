@@ -158,12 +158,39 @@ aside{
   
 
 
+.news-letter{
+  margin: 2rem;
+  padding: 2rem 1rem 3rem 1rem;
+  background-color: var(--brown-color);
+  color:var(--light-color);
+  border-radius: 25px;
+}
 
+.news-letter h2{
+  font-size: 1.8rem;
+}
 
+.news-letter input{
+  border-radius: 10px;
+  padding:0.5rem 0.7rem;
+  background-color: var(--light-color);
+  border: 1px solid var(--dark-color)
+}
+
+.news-letter button{
+  border: 1px solid var(--dark-color);
+  border-radius: 10px;
+  padding:0.5rem 0.7rem;
+  background-color: var(--red-color);
+  color:var(--light-color);
+  font-family: "Inter", sans-serif;
+
+}
 
 #footer-wrap{
   display: flex;
   padding:1rem;
+  margin-top:4rem;
 }
 
 .footer-logo{
